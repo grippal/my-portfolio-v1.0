@@ -1,0 +1,201 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: SeaGreen;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.navigation li {
+  padding: 0rem 2rem;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2F2F2F;
+  letter-spacing: 0.2rem;
+  text-align: justify;
+}
+
+ul.navigation li a {
+  color: #2F2F2F;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.1rem 0.1rem 0rem 0.325rem;
+  text-align: center;
+}
+
+ul.navigation li a.selected {
+  color: white;
+  background-color: #2F2F2F;
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  padding: 0.1rem 0.1rem 0rem 0.325rem;
+}
+
+ul.navigation li a:hover {
+  color: white;
+  background-color: #2F2F2F;
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  padding: 0.1rem 0.1rem 0rem 0.325rem;
+}
+
+ul.social-media {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: social;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul.social-media img {
+  padding: 0rem 1rem;
+  background-size: 4rem 4rem;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 40% 10%;
+      grid-template-columns: 50% 40% 10%;
+  -ms-grid-rows: 15% auto;
+      grid-template-rows: 15% auto;
+      grid-template-areas: "header header header" "main mac social";
+}
+
+body div.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background: url(/resources/images/plant.jpg) bottom left no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body div.content main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div.content main p {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 20px;
+  color: #2F2F2F;
+}
+
+body div.mac {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: mac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.mac img {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
+body div.mac div.button a {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1873C9;
+  background-color: white;
+  border: 3px solid #1873C9;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 4px 5px #afafaf;
+          box-shadow: 1px 4px 5px #afafaf;
+  padding: 0.3rem 3rem;
+}
+
+body div.mac div.button a:hover {
+  color: white;
+  background-color: #1873C9;
+  border: 3px solid #1873C9;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */
